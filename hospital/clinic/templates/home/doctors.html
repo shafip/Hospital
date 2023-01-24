@@ -1,0 +1,31 @@
+{% extends 'home/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row mb-3 mt-3  d-flex justify-content-center">
+  <h1>DOCTORS</h1>
+</div>
+
+<div class="row justify-content-center">
+  {% for i in doc %}
+  <div class="card mb-3 mr-5" style="width: 18rem;">
+  <img src="{{i.image.url}}" class="card-img-top" alt="...">
+  <div class="card-body">
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{i.name}}</li>
+    <li class="list-group-item">{{i.department}}</li>
+
+  </ul>
+  <div class="card-body">
+    <a href="" class="card-link">BOOKING</a>
+    <a href="" class="card-link">Enquiry</a>
+  </div>
+</div>
+
+{% endfor%}
+
+
+</div>
+
+{% endblock%}

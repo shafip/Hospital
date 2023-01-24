@@ -1,0 +1,40 @@
+{% extends 'home/main.html' %}
+{% load static %}
+{% block content %}
+<div class="row mb-3 mt-3  d-flex justify-content-center">
+
+  <h1>DEPARTMENT</h1>
+</div>
+<div class="row mb-3 mt-3  d-flex justify-content-center">
+  <div class="card">
+ 
+  <div class="card-body;">
+    <img class="wid" src="{% static 'images/1000_F_332878870_b4YX1t5DeR9Rsltx6QgaQDmy7w8XTCdu.jpg' %}" alt="">
+  </div>
+</div>
+</div>
+
+<div class="row d-flex justify-content-center">
+   {% for item in data %}
+<div class="card mb-3 mr-3 " style="max-width: 500px;">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="{{item.image.url}}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{item.de_name}}</h5>
+        <p class="card-text"> {{item.de_description}}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+
+</div>
+<div class="row-6"></div>
+
+{% endblock %}

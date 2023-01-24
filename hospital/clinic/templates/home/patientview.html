@@ -1,0 +1,49 @@
+{% extends 'home/main.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+  <div class="col-8">
+    <h1>RECIEVED</h1>
+    <div class="card mt-5 -500px;" style="width: 18rem;">
+  <img src="{% static 'images/emergecy.jpeg' %}" class="card-img-top w-500" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">EMERGENCY</h5>
+    <h4>7306000456</h4>
+  </div>
+</div>
+
+
+
+  </div>
+
+
+
+  <div class="col-4">
+    {% for item in data %}
+    <div class="card " style="width: 18rem;">
+  <img src="" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">Token_no:{{item.Token_id}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Date:{{item.date}}</li>
+    <li class="list-group-item">Name:{{item.Fullname}}</li>
+    <li class="list-group-item">Department:{{item.Department}}</li>
+    <li class="list-group-item">Doctor_:{{item.Doctor}}</li>
+    <li class="list-group-item">{{item.}}</li>
+  </ul>
+  <div class="card-body">
+    <a href="{% url 'home' %}"><button type="button" class="btn btn-success">HOME</button></a>
+    <form action="{% url 'delete' item.Token_id %}"
+        method="post" class="d-inline">{% csrf_token %}
+          <input type="submit" class="btn btn-sm btn-danger" value="Delete">
+        </form></td>
+
+  </div>
+</div>
+    {% endfor %}
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,246 @@
+{% extends 'home/main.html' %}
+{% load static %}
+{% block content %}
+
+<html lang="en">
+
+<head>
+    <title>Zay Shop eCommerce HTML CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home/custom.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home/templatemo.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home/bootstrap.min.css' %}">
+
+
+ 	<style>
+		.icons{
+			width:150px;
+			}
+	</style>
+
+
+</head>
+
+<body>
+
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Start Banner Hero -->
+    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="{% static 'images/doctor-nurses-special-equipment.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left align-self-center">
+                                <h1 class="h1 text-success"><b>YOUR HEALTH</b> </h1>
+                                <h3 class="h2">IS Our Priority</h3>
+
+                                <p>
+                                    Time and health are two precious assets that we don't recognize and appreciate until they have been depleted
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="{% static 'images/lab.jpeg' %}" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                               <h1 class="h1 text-success"><b>promise</b> </h1>
+                                <h3 class="h2">Nothing is impossble</h3>
+                                                                                                            Promise me you'll always remember: You're braver than you believe, and stronger than you seem, and smarter than you think.
+
+
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="{% static 'images/pharmacy.jpeg' %}" alt="">
+
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">We are waiting for good result</h1>
+                                <h3 class="h2">We can do this together for good result</h3>
+
+                                <p>
+                                    We bring you 100% free CSS templates for your websites.
+                                    If you wish to support TemplateMo, please make a small contribution via PayPal or tell your friends about our website. Thank you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+    <!-- End Banner Hero -->
+
+
+    <!-- Start Categories of The Month -->
+    <section id="feature" class="pad">
+        <div class="fea">
+            <img class="icons" src="{% static 'images/registration.jpeg'%}" alt="">
+            <h5>Free Registration</h5>
+        </div>
+
+        <div class="fea">
+            <img class="icons" src="{% static 'images/407482.jpeg' %}" alt="">
+            <h5>Ambulance</h5>
+        </div>
+        <div class="fea">
+            <img class="icons" src="{% static 'images/casuality.jpeg' %}" alt="">
+
+            <h5>Casuality</h5>
+        </div>
+        <div class="fea">
+            <img class="icons" src="{% static 'images/24.jpeg' %}" alt="">
+
+            <h5>24/7 Support</h5>
+        </div>
+    </section>
+
+
+    <!-- End Categories of The Month -->
+    <section class="campus">
+        <h1>Our Facilities</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row-ok">
+          <div class="campus-col">
+                        <img src="{% static 'images/lab.jpeg' %}" alt="">
+
+            <div class="layer">
+              <h3>LAB</h3>
+            </div>
+          </div>
+          <div class="campus-col">
+                       <img src="{% static 'images/canteen.jpeg' %}" alt="">
+
+            <div class="layer">
+              <h3>CANTEEN</h3>
+            </div>
+
+          </div>
+          <div class="campus-col">
+                       <img src="{% static 'images/pharmacy.jpeg' %}" alt="">
+
+            <div class="layer">
+              <h3>PHARMACY</h3>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+    <!-- Start Featured Product -->
+
+    <!-- End Categories of The Month -->
+
+    <!-- End Featured Product -->
+
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Email address</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+
+    <script type="text/javascript" src="{% static 'js/home/jquery-migrate-1.2.1.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/home/bootstrap.bundle.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/home/templatemo.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/home/custome.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/home/jquery-1.11.0.min.js' %}"></script>
+
+
+    <!-- End Script -->
+</body>
+
+</html>
+
+
+{% endblock content %}

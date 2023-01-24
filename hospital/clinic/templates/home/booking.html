@@ -1,0 +1,28 @@
+{% extends 'home/main.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="row mb-4 d-flex justify-content-center">
+		<h1>BOOKING</h1>
+	</div>
+<div class="row">
+
+	<div class="col-8 ">
+				<div class="row"><a href="{% url 'patient' %}">click here<h2>Your Token</h2> </a></h2></div>
+
+		<div class="row"><img class="mt-5" src="{% static 'images/1674025615332.jpeg' %}" alt="kk"></div>
+	</div>
+
+
+	<div class="col-4 ">
+		<form action = "" method = "post">
+			{% csrf_token %}
+			{{ form|crispy }}
+			<input type="submit" value=Submit" ></a>
+		</form>
+
+	</div>
+</div>
+
+
+{% endblock  %}
